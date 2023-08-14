@@ -34,13 +34,8 @@
 		if (!$studio) return
 
 		$studio.transaction(({ set }) => {
-			set(sheetObject.props.position.x, position.x)
-			set(sheetObject.props.position.y, position.y)
-			set(sheetObject.props.position.z, position.z)
-			set(sheetObject.props.quaternion.x, quaternion.x)
-			set(sheetObject.props.quaternion.y, quaternion.y)
-			set(sheetObject.props.quaternion.z, quaternion.z)
-			set(sheetObject.props.quaternion.w, quaternion.w)
+			set(sheetObject.props.position, position)
+			set(sheetObject.props.quaternion, quaternion)
 		})
 	}
 
